@@ -1,0 +1,4 @@
+[workspace]
+members = [
+    "population_calc/rust/population_calc"
+]
