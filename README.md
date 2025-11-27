@@ -4,5 +4,6 @@ A collection of small programs implemented in both Python and Rust. This reposit
 
 ### Recommended Resources:
 
-- [Quickref.me Cheat Sheet](https://quickref.me/rust.html)
-- [Rust docs](https://doc.rust-lang.org/stable/)
+- [Rustfully](https://www.youtube.com/@rustfully), a very good Youtuber which explains Rust from the ground up.
+- [Quickref.me Cheat Sheet](https://quickref.me/rust.html), a very clean and simple overview about the most important Rust methods.
+- [Rust docs](https://doc.rust-lang.org/stable/), The complete Rust docs.
