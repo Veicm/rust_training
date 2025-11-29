@@ -1,3 +1,5 @@
+//! This class is used to simulate the german population over the years since 2005.
+
 use std::io;
 
 fn main() {
@@ -29,6 +31,22 @@ fn main() {
     sim(years, raw);
 }
 
+/// This function prints the values for each given year.
+///
+/// # Arguments
+///
+/// * `years` – Total number of years to simulate.
+/// * `raw` – If `true`, prints the values for every individual year.
+///           When `false`, only summary output is produced.
+///
+/// # Returns
+///
+/// Nothing. Output is written directly to the console.
+///
+/// # Notes
+///
+/// The exact behavior depends on the internal state of the struct.
+/// Adjust the printing logic if the simulation model changes.
 fn sim(years: u128, raw: bool) {
     let start_year: u128 = 2005;
 
@@ -69,6 +87,21 @@ fn sim(years: u128, raw: bool) {
     }
 }
 
+/// Computes the next year's values based on the previous year's data,
+/// following a fixed update schema.
+///
+/// # Arguments
+///
+/// * `old_values` – Values from the previous year. Must follow the expected tuple format.
+///
+/// # Returns
+///
+/// A tuple containing the computed values for the next year, in the same field order as `old_values`.
+///
+/// # Notes
+///
+/// The update schema is deterministic. If the schema changes, both input
+/// and output interpretation must be adjusted accordingly.
 fn calc(old_values: (f64, f64, f64, f64)) -> (f64, f64, f64, f64) {
     let g_0_14 = old_values.0;
     let g_15_49 = old_values.1;

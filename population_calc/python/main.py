@@ -7,7 +7,7 @@ class Simulator:
     since 2005.
 
     Attributes:
-        None1
+        None
     """
 
     def __init__(self) -> None:
@@ -93,7 +93,7 @@ class Simulator:
         )
         return new_values
 
-    def start_point(self):
+    def start_point(self) -> None:
         print("How many years do you want to simulate?")
         print("integers only !!!")
         years: int = int(input())
