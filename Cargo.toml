@@ -1,4 +1,4 @@
 [workspace]
-members = [
+members = ["letter_count/rust/letter_count",
     "population_calc/rust/population_calc"
 ]
